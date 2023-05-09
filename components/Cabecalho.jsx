@@ -11,10 +11,11 @@ const Cabecalho = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Início</Nav.Link>
-              <Nav.Link href="/deputados">Deputados</Nav.Link>
-              <Nav.Link href="/">Partidos</Nav.Link>
-              <Nav.Link href="/">Orgãos</Nav.Link>
+              <a class="navbar-brand" href="/">
+                Obras de Arte
+              </a>
+              <Nav.Link href="/obras">Obras</Nav.Link>
+              <Nav.Link href="/tiposDeArte">Tipos de Arte</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
