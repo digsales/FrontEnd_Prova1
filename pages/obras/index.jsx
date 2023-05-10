@@ -26,7 +26,12 @@ const index = ({ artes }) => {
                 </Link>
               </td>
               <td>{item.title}</td>
-              <td>{item.artist_title}</td>
+              {item.artist_title ? (
+                <td>{item.artist_title}</td>
+              ) : (
+                <td>Artista desconhecido</td>
+              )}
+              {/* <td>{item.artist_title}</td> */}
               <td>{item.department_title}</td>
             </tr>
           ))}
